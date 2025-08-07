@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rummy Loot - India's No.1 Gaming Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fff;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #7B1FA2;
+      font-size: 6vw;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+
+    .timer {
+      font-size: 6vw;
+      color: red;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .download-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 5vw;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      display: inline-block;
+      text-decoration: none;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .features {
+      font-size: 4vw;
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .features p {
+      margin: 8px 0;
+      font-weight: bold;
+    }
+
+    .features span {
+      margin-right: 8px;
+    }
+
+    .orange { color: orange; }
+    .purple { color: #9c27b0; }
+    .green  { color: #4caf50; }
+    .red    { color: red; }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 24px; }
+      .timer { font-size: 24px; }
+      .download-btn { font-size: 18px; }
+      .features { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>INDIA'S NO 1 GAMING SITE</h1>
+
+  <div class="timer" id="timer">5</div>
+
+  <a href="https://tinyurl.com/10008133" class="download-btn" id="download">
+    ⬇️ DOWNLOAD AND PLAY<br><small>Click here</small>
+  </a>
+
+  <div class="features">
+    <p><span>✔️</span><span class="orange">FREE BONUS FAST REGISTER</span></p>
+    <p><span>✔️</span><span class="purple">SUPER FAST WITHDRAWAL</span></p>
+    <p><span>✔️</span><span class="green">SUPER FAST DEPOSIT</span></p>
+    <p><span>✔️</span><span class="red">FREE DEPOSIT BONUS</span></p>
+  </div>
+
+  <script>
+    let countdown = 5;
+    const timerElement = document.getElementById('timer');
+    const downloadLink = document.getElementById('download');
+
+    // Start countdown
+    const interval = setInterval(() => {
+      countdown--;
+      timerElement.textContent = countdown;
+      if (countdown === 0) {
+        clearInterval(interval);
+        window.location.href = downloadLink.href;
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
